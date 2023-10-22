@@ -8,7 +8,6 @@ class Car
 
     public function __construct($name, $number, $color)
     {
-
         $this->name = $name;
         $this->number = $number;
         $this->color = $color;
@@ -46,8 +45,8 @@ class Car
 
     public function information()
     {
-        return "車の車種:{$this->getName()}" . PHP_EOL .
-            "車体番号:{$this->getNumber()}" . PHP_EOL .
-            "カラー:{$this->getColor()}";
+        return "車の車種:{$this->name}" . PHP_EOL .
+            "車体番号:{$this->number}" . PHP_EOL .
+            "カラー:{$this->color}";
     }
 }
